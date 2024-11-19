@@ -21,6 +21,15 @@ const Persona = conexion.define(
         apellido: {
             type: DataTypes.STRING(50),
             allowNull: false
+        },
+        fecha_nacimiento: {
+            type: DataTypes.DATEONLY,
+            allowNull: true
+        },
+        activo: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+            defaultValue: true
         }
     }, {
         // Cambiar nombres de las columnas para timestamps
